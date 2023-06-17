@@ -11,13 +11,13 @@ app.use(log('dev'));
 const path=require('path');
 app.use(express.static(path.join(__dirname+'/dist/FrontEnd')));
 
-const PORT=3001;
+const PORT=3000;
 app.listen(PORT,()=>{
     console.log(`Server is running on code ${PORT}`);
 });
 // Task2: create mongoDB connection 
 const mongoose=require('mongoose');
-const url = 'mongodb+srv://spvivekbabu:Fsda123@cluster0.iodvl1p.mongodb.net/';
+const url = 'mongodb+srv://sreesankarimurali:sankarimongodb@cluster0.cocvm2g.mongodb.net/';
 mongoose.connect(url,{
     useNewUrlParser: true,
     useUnifiedTopology: true,
